@@ -1,0 +1,29 @@
+{
+  "name": "buibr/bsr",
+  "description": "Billing Standard Requirement",
+  "keywords": [
+    "php",
+    "Billing",
+    "Billing Standards",
+    "Invoicing",
+    "Invoice Standard"
+  ],
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Burhan Ibrahimi",
+      "email": "mail@buib.me",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=8.2"
+  },
+  "minimum-stability": "dev",
+  "autoload": {
+    "psr-4": {
+      "BSR\\": "src/"
+    }
+  }
+}
