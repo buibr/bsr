@@ -2,7 +2,7 @@
 
 namespace BSR\Contracts;
 
-use BSR\Contracts\Enums\DiscountType;
+use BSR\Enums\DiscountType;
 
 interface DiscountContract
 {
@@ -12,7 +12,7 @@ interface DiscountContract
     public function getName(): string;
     
     /**
-     * @return \BSR\Contracts\Enums\DiscountType
+     * @return \BSR\Enums\DiscountType
      */
     public function getType(): DiscountType;
     

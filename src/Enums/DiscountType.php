@@ -1,6 +1,6 @@
 <?php
 
-namespace BSR\Contracts\Enums;
+namespace BSR\Enums;
 
 enum DiscountType
 {

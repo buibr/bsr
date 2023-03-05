@@ -1,13 +1,7 @@
 <?php
 
 
-namespace BSR\Contracts\Invoices;
-
-use BSR\Contracts\IssuerContract;
-use BSR\Contracts\PayableContract;
-use BSR\Contracts\ShippingContract;
-use BSR\Contracts\CustomerContract;
-use BSR\Contracts\Invoices\ItemContract;
+namespace BSR\Contracts;
 
 interface InvoiceContract
 {
@@ -19,7 +13,7 @@ interface InvoiceContract
     public function getId(): string;
     
     /**
-     * @return ItemContract[]|\Iterator
+     * @return InvoiceItemContract[]|\Iterator
      */
     public function getItems() : \Iterator;
     

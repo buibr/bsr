@@ -2,6 +2,9 @@
 
 namespace BSR\Contracts;
 
+/**
+ * When invoicing to customer for some service/goods, we have to put ours bank information on the invoice.
+ */
 interface BankAccountContract
 {
     /**

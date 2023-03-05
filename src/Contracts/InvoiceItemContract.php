@@ -1,12 +1,10 @@
 <?php
 
 
-namespace BSR\Contracts\Invoices;
+namespace BSR\Contracts;
 
 
-use BSR\Contracts\DiscountContract;
-
-interface ItemContract
+interface InvoiceItemContract
 {
     /**
      * @return string
@@ -45,6 +43,6 @@ interface ItemContract
      *
      * @return bool
      */
-    public function getRefundable(): bool;
+    public function isRefundable(): bool;
     
 }

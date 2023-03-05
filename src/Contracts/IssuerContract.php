@@ -29,7 +29,7 @@ interface IssuerContract
     /**
      * This is the logo on the invoice.
      *
-     * @return mixed
+     * @return null|string
      */
-    public function getImage();
+    public function getImage(): ?string;
 }
