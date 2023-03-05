@@ -4,6 +4,8 @@
 namespace BSR\Contracts\Invoices;
 
 
+use BSR\Contracts\DiscountContract;
+
 interface ItemContract
 {
     /**
@@ -24,18 +26,12 @@ interface ItemContract
     public function getUnitPrice(): float;
     
     /**
-     * Should return discount price after calculation.
+     * Discount object of this item.
      *
-     * Example:
-     *
-     * unit_price = 100.00 $;
-     * real_discount = 20%
-     *
-     * should return: 20 $
-     *
-     * @return float
+     * @return DiscountContract
      */
-    public function getDiscount(): float;
+    public function getDiscount(): DiscountContract;
+    
     
     /**
      * Return the price after calculation

@@ -2,6 +2,9 @@
 
 namespace BSR\Contracts;
 
+/**
+ * Payable point/address/system for invoice.
+ */
 interface PayableContract
 {
     /**
